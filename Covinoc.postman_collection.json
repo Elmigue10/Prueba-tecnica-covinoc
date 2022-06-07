@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "bac4e70a-a9f0-4e38-8828-edfa6e93fa0b",
+		"name": "Covinoc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/customer/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Angelá\",\r\n    \"phone\":\"3136578345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/customer/newCustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"newCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"Angelá Patrcia\",\r\n    \"phone\":\"3136578345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/customer/updateCustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"updateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/customer/deleteCustomer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"deleteCustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
